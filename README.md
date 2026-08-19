@@ -23,7 +23,7 @@ PNNX intercepts the PyTorch TorchScript JIT graph and seamlessly fuses PyTorch G
 * `3_quantize_model.py`: Applies PyTorch-level quantization to the GRU, shrinking it to **FP16** and **INT8**, and then exports those directly to NCNN via PNNX.
 * `4_inference_ncnn.py`: Loads the raw NCNN files into memory and benchmarks the file sizes and CPU inference speeds for all variants (FP32, FP16, INT8).
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 Install the required dependencies:
 
