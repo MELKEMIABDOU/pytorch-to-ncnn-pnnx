@@ -2,7 +2,7 @@
 
 This repository demonstrates how to export a PyTorch Recurrent Neural Network (GRU) directly into the **NCNN** format, bypass ONNX entirely, and apply **FP16** and **INT8** quantization.
 
-## 🧠 Why avoid ONNX here? (The Standard vs. PNNX Method)
+##  Why avoid ONNX here? (The Standard vs. PNNX Method)
 
 ### 1. The Standard Way (ONNX to NCNN)
 For most standard models (like CNNs used for image recognition), the normal pipeline is:
@@ -15,7 +15,7 @@ When dealing with **Recurrent Neural Networks (RNNs, LSTMs, GRUs)**, the standar
 **The Solution:** We use **PNNX (PyTorch Neural Network Exchange)**. 
 PNNX intercepts the PyTorch TorchScript JIT graph and seamlessly fuses PyTorch GRU cells directly into their native C++ NCNN equivalents, bypassing ONNX entirely and preventing corrupted graphs.
 
-## 📁 Project Structure
+##  Project Structure
 
 * `model.py`: Defines the PyTorch `SimpleGRU` architecture (simulating a 24-feature, 128-sequence telemetry model).
 * `1_train_model.py`: Initializes the GRU and saves the `.pth` weights.
@@ -31,7 +31,7 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
-## 🏃 How to run
+##  How to run
 
 Run the steps in order:
 
